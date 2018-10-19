@@ -64,6 +64,8 @@ function placeOrder(cardNumber) {
     return `Sorry, we don\'t have a credit card on file for you.`
   }
   var num = total()
+  cart.splice(0, cart.length)
+  return `Your total cost is $${amt}, which will be charged to the card ${cardNumber}.`;
 }
 
 ///my functions
